@@ -74,15 +74,8 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* ESTILOS DEL JUEGO */
@@ -109,25 +102,11 @@
       transition: transform 0.15s ease, border-color 0.2s ease;
     }
 
-    .player.leading {
-      transform: scale(1.05);
-    }
-
-    #zone-z {
-      border-color: #ff5c5c;
-    }
-
-    #zone-u {
-      border-color: #5cb8ff;
-    }
-
-    #zone-z.leading {
-      box-shadow: 0 0 25px rgba(255, 92, 92, 0.8);
-    }
-
-    #zone-u.leading {
-      box-shadow: 0 0 25px rgba(92, 184, 255, 0.8);
-    }
+    .player.leading { transform: scale(1.05); }
+    #zone-z { border-color: #ff5c5c; }
+    #zone-u { border-color: #5cb8ff; }
+    #zone-z.leading { box-shadow: 0 0 25px rgba(255, 92, 92, 0.8); }
+    #zone-u.leading { box-shadow: 0 0 25px rgba(92, 184, 255, 0.8); }
 
     .player-name {
       font-size: 1.3em;
@@ -149,30 +128,13 @@
       outline: none;
     }
 
-    .name-input:focus {
-      border-color: #ffd93d;
-    }
+    .name-input:focus { border-color: #ffd93d; }
+    #zone-z .name-input:focus { border-color: #ff5c5c; }
+    #zone-u .name-input:focus { border-color: #5cb8ff; }
 
-    #zone-z .name-input:focus {
-      border-color: #ff5c5c;
-    }
-
-    #zone-u .name-input:focus {
-      border-color: #5cb8ff;
-    }
-
-    .score {
-      font-size: 4em;
-      font-weight: bold;
-    }
-
-    #score-z {
-      color: #ff5c5c;
-    }
-
-    #score-u {
-      color: #5cb8ff;
-    }
+    .score { font-size: 4em; font-weight: bold; }
+    #score-z { color: #ff5c5c; }
+    #score-u { color: #5cb8ff; }
 
     #status {
       margin-top: 30px;
@@ -189,17 +151,9 @@
     }
 
     @keyframes pop {
-      0% {
-        transform: scale(0.7);
-      }
-
-      60% {
-        transform: scale(1.15);
-      }
-
-      100% {
-        transform: scale(1);
-      }
+      0% { transform: scale(0.7); }
+      60% { transform: scale(1.15); }
+      100% { transform: scale(1); }
     }
 
     .controls-info {
@@ -232,14 +186,8 @@
       transition: transform 0.15s ease, background 0.2s ease;
     }
 
-    #reset-btn:hover {
-      background: #ffe873;
-      transform: translateY(-2px);
-    }
-
-    #reset-btn:active {
-      transform: translateY(0);
-    }
+    #reset-btn:hover { background: #ffe873; transform: translateY(-2px); }
+    #reset-btn:active { transform: translateY(0); }
 
     /* ESTILOS DE LA DOCUMENTACIÓN */
     .docs-container {
@@ -250,7 +198,7 @@
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-
+    
     .docs-container h2 {
       text-align: center;
       margin-bottom: 40px;
@@ -261,11 +209,11 @@
     .docs-container h3 {
       margin-top: 40px;
       margin-bottom: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid rgba(255,255,255,0.2);
       padding-bottom: 10px;
       color: #5cb8ff;
     }
-
+    
     .docs-container p {
       margin-bottom: 20px;
       opacity: 0.8;
@@ -284,7 +232,7 @@
     }
 
     .docs-container code {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.1);
       padding: 2px 6px;
       border-radius: 4px;
       color: #ff5c5c;
@@ -296,12 +244,11 @@
       gap: 20px;
     }
 
-    .docs-content img,
-    .docs-content video {
+    .docs-content img, .docs-content video {
       width: 100%;
       border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     /* CONTENEDOR DE YOUTUBE RESPONSIVO */
@@ -309,12 +256,11 @@
       position: relative;
       width: 100%;
       padding-bottom: 56.25%;
-      /* Relación de aspecto 16:9 */
       height: 0;
       border-radius: 8px;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .video-container iframe {
@@ -331,7 +277,7 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-
+    
     .media-grid video {
       height: 100%;
       object-fit: cover;
@@ -351,14 +297,12 @@
   <div id="docs-section" class="section active-section">
     <div class="docs-container">
       <h2>Documentación del Proyecto</h2>
-
+      
       <div class="docs-content">
         <h3>1. Video de Demostración Final</h3>
-        <p>Demostración del dispositivo "Gallito Digital" en uso real, evidenciando el prototipo físico interactuando
-          con la interfaz.</p>
+        <p>Demostración del dispositivo "Gallito Digital" en uso real, evidenciando el prototipo físico interactuando con la interfaz.</p>
         <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/cA23zgDOFSk" title="Video Demostrativo Dash Sound"
-            allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/cA23zgDOFSk" title="Video Demostrativo Dash Sound" allowfullscreen></iframe>
         </div>
 
         <h3>2. Lámina de Presentación</h3>
@@ -366,24 +310,18 @@
         <img src="lamina.jpg" alt="Lámina conceptual del proyecto">
 
         <h3>3. Registro Audiovisual del Proceso</h3>
-        <p>Pruebas del circuito "Keyboard Hack" con los contactos de cobre, y proceso de corte láser de la tabla base.
-        </p>
+        <p>Pruebas del circuito "Keyboard Hack" con los contactos de cobre, y proceso de corte láser de la tabla base.</p>
         <div class="media-grid">
           <video src="procesopt1.mp4" controls></video>
           <video src="procesopt2.mp4" controls></video>
         </div>
 
         <h3>4. Archivos de Código y Sonido</h3>
-        <p><strong>Código Fuente:</strong> La totalidad de la programación, lógica de interacción y arquitectura de
-          software (HTML5, CSS3 y Vanilla JavaScript) se encuentra alojada en este mismo archivo
-          <code>index.html</code>. Toda la captura de eventos del teclado (<code>keydown</code>), el sistema de
-          puntuación y la validación de victoria ocurren en tiempo real en el navegador.
-        </p>
-        <p><strong>Archivos de Audio:</strong> Los recursos sonoros empleados para el feedback auditivo de la interfaz
-          se encuentran en la raíz del repositorio y son llamados dinámicamente mediante las variables del script:</p>
+        <p><strong>Código Fuente:</strong> La totalidad de la programación, lógica de interacción y arquitectura de software (HTML5, CSS3 y Vanilla JavaScript) se encuentra alojada en este mismo archivo <code>index.html</code>. Toda la captura de eventos del teclado (<code>keydown</code>), el sistema de puntuación y la validación de victoria ocurren en tiempo real en el navegador.</p>
+        <p><strong>Archivos de Audio:</strong> Los recursos sonoros empleados para el feedback auditivo de la interfaz se encuentran en la raíz del repositorio y son llamados dinámicamente mediante las variables del script:</p>
         <ul>
-          <li><code>Moneda de Mario Bros [ Download ]_2.mp3</code> (Feedback de puntuación por cada pulsación)</li>
-          <li><code>Fatality_2.mp3</code> (Feedback de victoria al alcanzar 3 puntos)</li>
+          <li><code>Moneda de Mario Bros [ Download ].mp3</code> (Feedback de puntuación por cada pulsación)</li>
+          <li><code>Fatality.mp3</code> (Feedback de victoria al alcanzar 3 puntos)</li>
         </ul>
       </div>
     </div>
@@ -429,7 +367,6 @@
       document.getElementById('btn-docs').classList.remove('active');
       document.getElementById('btn-game').classList.remove('active');
 
-      // Detener videos locales al cambiar de pestaña
       const videos = document.querySelectorAll('video');
       videos.forEach(video => video.pause());
 
@@ -476,10 +413,10 @@
     ];
 
     // ============================
-    // CARGA DE AUDIO
+    // CARGA DE AUDIO CON NOMBRES EXACTOS
     // ============================
-    const RUTA_MONEDA = './Moneda de Mario Bros [ Download ]_2.mp3';
-    const RUTA_FATALITY = './Fatality_2.mp3';
+    const RUTA_MONEDA = './Moneda de Mario Bros [ Download ].mp3';
+    const RUTA_FATALITY = './Fatality.mp3';
 
     function reproducirMoneda() {
       const moneda = new Audio(RUTA_MONEDA);
@@ -548,7 +485,7 @@
     }
 
     function manejarTeclado(event) {
-      if (!juegoActivo) return;
+      if (!juegoActivo) return; 
       if (event.target.tagName === 'INPUT') return;
       if (event.repeat) return;
 
@@ -579,5 +516,4 @@
 
   </script>
 </body>
-
 </html>
